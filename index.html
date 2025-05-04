@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-div">
+        <input type="text" placeholder="0" id="result" >            
+        <div>
+            <button class="operator" onclick="Clear()">AC</button>
+            <button class="operator" onclick="Delete()">DEL</button>
+            <button class="operator" onclick="Display('%')">%</button>
+            <button class="operator divide" onclick="Display('/')">/</button>
+        </div>
+        <div>
+            <button onclick="Display('7')">7</button>
+            <button onclick="Display('8')">8</button>
+            <button onclick="Display('9')">9</button>
+            <button class="operator size" onclick="Display('*')">*</button>
+        </div>
+        <div>
+            <button onclick="Display('4')">4</button>
+            <button onclick="Display('5')">5</button>
+            <button onclick="Display('6')">6</button>
+            <button class="operator size" onclick="Display('+')">+</button>
+        </div>
+        <div>
+            <button onclick="Display('3')">3</button>
+            <button onclick="Display('2')">2</button>
+            <button onclick="Display('1')">1</button>
+            <button class="operator size" onclick="Display('-')">-</button>
+        </div>
+        <div>
+            <button onclick="Display('00')">00</button>
+            <button onclick="Display('0')">0</button>
+            <button onclick="Display('.')">.</button>
+            <button class="equal operator size" onclick="Calculate()">=</button>
+        </div>
+    </div>
+    <button class="click" onclick="clickme()">Click Me</button>
+    <script src="app.js"></script>
+</body>
+</html>
